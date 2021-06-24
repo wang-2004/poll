@@ -63,7 +63,7 @@ class OptionEdit(UpdateView):
     model = Option
     fields = ['title']
     pk_url_kwarg = 'oid'
-    template_name = 'deefault/poll_form.html'
+    template_name = 'default/poll_form.html'
 
     def get_success_url(self):
         return "/poll/{}/".format(self.object.poll_id)
